@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background: url(../images/background-image.png) no-repeat center/cover;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+
+    .multi-select{
+        margin: 15rem auto 3rem auto;
+        width: 100%;
+        max-width: 650px;
+
+        @media (max-width: 610px) {
+            width: 90%;
+        }
+
+        .selected-options{
+            position: relative;
+
+            input{
+                font-family: inherit;
+                font-weight: inherit;
+                font-size: inherit;
+                color: #11103C;
+                padding: 0.6rem;
+                border: 1px solid #11103C;
+                border-radius: 4px;
+                max-width: 600px;
+                width: 100%;   
+                outline: none;             
+
+                &::placeholder{
+                    color: #11103C;
+                }
+            }
+
+            i{
+                position: absolute;
+                right: 70px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @media (max-width: 610px) {
+                    right: 20px;
+                }
+            }
+        }
+
+        ul{
+            li{
+                max-width: 601px;
+                width: 100%;
+                background-color: #fff;
+                list-style: none;
+                padding: 0.6rem;
+                cursor: pointer;
+                border-radius: 4px;
+
+                &:hover{
+                    background-color: #EDEFFB;
+                }
+            }
+        }
+    }
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #EDEFFB;
+    color: #11103C;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.skill-tag:hover {
+    background-color: red;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    color: darken(#ECD4C0, 60%);
+
+    a,
+    a:visited{
+        text-decoration: none;
+        font-style: italic;
+        color: darken(#9A9A9C, 50%);
+    }
+}
