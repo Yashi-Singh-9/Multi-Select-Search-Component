@@ -15,6 +15,7 @@ This is a Multi-Select Search Component built using HTML, JavaScript, and LESS. 
 ![](assets/images/desktop-design.png)
 
 **Mobile Design**
+
 <img src="assets/images/mobile-design.png" height="750" width="auto">
 
 ## Installation
